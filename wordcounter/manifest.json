@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "FF.net wordcounter",
+  "description": "Add together wordcount of stories on a fanfiction.net user page.",
+  "version": "1.0",
+
+  "options_page": "options.html",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.fanfiction.net/~*","https://www.fanfiction.net/u/*"],
+      "js": ["myscript.js"]
+    }
+  ],
+
+  "permissions": ["activeTab", "storage"]
+}
